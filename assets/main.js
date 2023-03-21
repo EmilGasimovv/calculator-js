@@ -6,9 +6,10 @@ let buttons = document.querySelectorAll('.buttons span');
 buttons.forEach(btn => {
     btn.addEventListener("click", () => {
         problem.innerHTML == "0" ? problem.innerHTML = " " : "";
+    
         switch (btn.innerHTML) {
             case '+':
-                if (problem.dataset.check == "true") {
+                if (problem.dataset.check == "true" ) {
                     problem.innerHTML += btn.innerHTML;
                     problem.dataset.check = "false";
                 }
@@ -67,6 +68,9 @@ buttons.forEach(btn => {
                 problem.innerHTML += btn.innerHTML;
                 problem.dataset.check = "true";
         }
+      
+        
+    
     })
 })
 calc.addEventListener('click', () => {
