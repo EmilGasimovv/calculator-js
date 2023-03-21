@@ -30,13 +30,14 @@ body{
     margin-bottom: 50px;
     
 }
+.screen .result{
+    margin-bottom: 15px;
+}
 .buttons{
     width: 260px;
     height: 350px;
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
-    
- 
          
 }
 .buttons span{
@@ -48,13 +49,25 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     
+}
+.buttons span:active{
+    transform: scale(0.99);
 }
 .oprt{
     background-color: #F69906;
 }
+.oprt:active{
+    background-color: #e28e06;
+}
+
 .oprt-1{
     background-color: #d8d8d8;
+}
+.oprt-1:active{
+    background-color: #b6b6b6;
+
 }
 .calc{
     background-color: #F69906;
@@ -63,9 +76,16 @@ body{
     height: 130px !important;
     border-radius: 70px !important;
 }
+.calc:active{
+    background-color: #c9800a;
+
+}
 .num{
     color: white;
     background-color: #313131;
+}
+.num:active{
+    background-color: #181818;
 }
 .num0{
     width: 120px !important;
