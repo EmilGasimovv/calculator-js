@@ -108,16 +108,18 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         
         
         
     }
     .screen{
         width: 100%;
-        height: 120px;
+        height: fit-content;
         font-size: 45px;
         padding: 0 15px;
         overflow: hidden;
+        
         
         
 
@@ -127,7 +129,6 @@ body{
         height: fit-content;
         display: flex;
         justify-content: end;
-        overflow-x: scroll;
         
 
     }
